@@ -9,6 +9,7 @@ class ConfirmBattleContainer extends React.Component {
       isLoading: true,
       playersInfo: []
     }
+    this.handleInitiateBattle = this.handleInitiateBattle.bind(this)
   }
 
   componentDidMount() {
