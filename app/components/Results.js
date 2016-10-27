@@ -4,6 +4,7 @@ import UserDetailsWrapper from './UserDetailsWrapper'
 import { Link } from 'react-router'
 import styles from '../styles'
 import MainContainer from './MainContainer'
+import Loading from './Loading'
 
 const StartOver = () => {
   return (
@@ -18,7 +19,7 @@ const StartOver = () => {
 const Results = (props) => {
   if (props.isLoading) {
     return (
-      <p>LOADING</p>
+      <Loading speed={500} text='One moment' />
     )
   }
 
